@@ -48,6 +48,7 @@ header{
 #menuHorizontal ul{
     display: flex;
     flex-direction: row;
+    justify-content: end;
     gap: 10px;
 }
 
@@ -55,14 +56,6 @@ header{
     width: 50px;
 }
 
-.nuevaFoto{
-    background-color: #f0e9ff;
-    border: none;
-    cursor: pointer;
-    width: 110px;
-    height: 30px;
-    font-weight: bold;
-}
 
 /* MAIN CONTENT */
 
@@ -141,7 +134,10 @@ footer{
     width: 100%;
 }
 
+
 @media screen and (min-width: 1000px){
+
+    /* HEADER */
     #menuHorizontal{
        width: 0%;
        margin-bottom: 100px;
@@ -160,12 +156,8 @@ footer{
     }
     
     .nuevaFoto{
-        background-color: #f0e9ff;
-        border: none;
-        cursor: pointer;
         width: 180px;
         height: 30px;
-        font-weight: bold;
         font-size:25px;
     }
 
@@ -175,20 +167,14 @@ footer{
     width: 50px;
 }
 
-li{
-    list-style: none;
-}
-
 
 /* PERFILES AMIGOS */
 .perfiles{
     margin-bottom: 50px;
     margin-top: 80px;
-    padding-left: 50spx;
-    padding-right: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
     display: flex;
-    gap: 5px;
-    justify-content: center;
 }
 
 .perfil{
@@ -199,8 +185,6 @@ li{
 
 
 .txtimg{
-    background-color: transparent;
-    border:none;
     font-size: 20px;
 }
 
@@ -213,12 +197,8 @@ li{
 
 /* FOOTER */
 footer{
-    background: url(wallpaper/cosmos.png);
-    height: 130px;
-    margin-top: 20px;
-    bottom: 0;
-    position:relative;
-    width: 100%;
+   position:relative;
+    
 }
 
 

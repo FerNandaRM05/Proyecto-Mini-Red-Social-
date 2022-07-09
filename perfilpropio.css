@@ -52,6 +52,7 @@ header{
 #menuHorizontal ul{
     display: flex;
     flex-direction: row;
+    justify-content: end;
     gap: 10px;
 }
 
@@ -139,6 +140,40 @@ h4{
 
 li{
     list-style: none;
+}
+
+/* PERFILES AMIGOS */
+.perfiles{
+    margin-bottom: 35px;
+    margin-top: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.txtimg{
+    background-color: transparent;
+    border:none;
+    
+}
+
+.imgdreamer{
+    height: 35px;
+    border-radius: 140%;
+}
+
+.flecha{
+    width: 15px;
+    margin-top: 12px;
 }
 
 /* GALERÍA PERFIL */

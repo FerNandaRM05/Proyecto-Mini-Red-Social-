@@ -52,6 +52,7 @@ header{
 #menuHorizontal ul{
     display: flex;
     flex-direction: row;
+    justify-content: end;
     gap: 10px;
 }
 
@@ -59,14 +60,6 @@ header{
     width: 50px;
 }
 
-.nuevaFoto{
-    background-color: #f0e9ff;
-    border: none;
-    cursor: pointer;
-    width: 110px;
-    height: 30px;
-    font-weight: bold;
-}
 
 /* MAIN CONTENT */
 
