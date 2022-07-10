@@ -1,8 +1,6 @@
 async function login(e){
     e.preventDefault()
 
-    
-
     var email = document.getElementById("email").value;
     var contraseña = document.getElementById("password").value;
     const jsondata = await fetch("http://localhost/scripts-php/Proyecto-Mini-Red-Social-/json/data.json")
@@ -19,11 +17,12 @@ async function login(e){
 }
 
 function userexists(data, email, contraseña){
-    for (let i = 0; i < data.length; i++) {
+    for (let i = 0; i < data.length; i++){
         if (data[i].email == email && data[i].password == contraseña){
-            return true            
+            return true  
+                     
         }    
     }
     return false
 }
-
+ 

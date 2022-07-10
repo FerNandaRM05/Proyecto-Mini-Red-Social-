@@ -239,10 +239,9 @@ li{
 /* FOOTER */
 
 footer{
-    background: url(wallpaper/cosmos.png);
+    background: url(../img/cosmos.png);
     height: 130px;
     margin-top: 20px;
-    position: absolute;
     bottom: 0;
     width: 100%;
 }
