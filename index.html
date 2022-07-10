@@ -26,10 +26,10 @@
 				<div class="inputs_sec"> <!-- INPUTS -->
 					<input type="email" placeholder="correo" id="email">
 					<input type="text" placeholder="contraseña" id="password">
-					<button>enviar</button>
+					<button onclick="login(event)">enviar</button>
 				</div>
 				<div> <!--texto-->
-					<a href="registro.html"><h1>¿NO ESTÁS REGISTRADO?</a></h1>
+					<a href="./pages/registro.html"><h1>¿NO ESTÁS REGISTRADO?</a></h1>
 					<h2>ÚNETE A MÁS DE 1000 DREAMERS</h2>
 				</div>
 			</div>
@@ -38,5 +38,14 @@
 
 	</div>
 	<script src="./JS/login.js"></script>
+	<script>
+		fetch('../Proyecto-Mini-Red-Social-/php/createUser.php',{
+			method : 'POST',
+			body: JSON.stringify({"name" : "Juan Daniel"})
+			
+		})
+		.then(response => response.json())
+        .then(data => console.log(data));
+	</script>
 </body>
 </html>
