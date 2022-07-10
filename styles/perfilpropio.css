@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+    overflow-wrap: break-word; 
+
+}
+
+a{
+    text-decoration: none;
+}
+
+/* TIPOGRAFÍAS */
+
+/* RUDA BLACK font-family: 'Ruda', sans-serif; */ 
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@900&display=swap');
+
+/* alternativa a 29LT BUKRA - MONTSERRAT   font-family: 'Montserrat', sans-serif; */ 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* alternativa a Gidole  font-family: 'Abel', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+
+/* ICONOS Atribución:  
+<a href="https://www.flaticon.es/iconos-gratis/identificacion" title="identificación iconos">Identificación iconos creados por Icongeek26 - Flaticon</a>;
+*/
+
+html{
+	width: 100%;
+    height: 100%;
+}
+
+body{
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    gap: 60px;
+    height: 80px;
+}
+
+#menuHorizontal{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#menuHorizontal ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 10px;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.nuevaFoto, .modificarPerfil{
+    background-color: #f0e9ff;
+    border: none;
+    cursor: pointer;
+    width: 110px;
+    height: 30px;
+    font-weight: bold;
+}
+
+/* MAIN CONTENT */
+
+#container{
+    margin-top: 60px;
+    height: cont(100vh - 80px- 130px);
+}
+
+#parteCentral{
+    display: flex;
+    width: 50%;
+    margin-left: 7%;
+    /* margin: 0 auto; */
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.userBox{
+    width: 70%;
+}
+
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.user_photo img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.inputs_sec{
+    line-height: 40px;
+}
+
+.inputs_sec input, .inputs_sec button{
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Ruda', sans-serif;
+    font-weight: bold;
+}
+
+.inputs_sec input{
+    height: 30px;
+    width: 170px;
+    border: solid 3px;
+    border-color: #f0e9ff;
+    font-weight: 700;
+}
+
+.inputs_sec button{
+    height: 25px;
+    width: 170px;
+    background-color: #f0e9ff;
+    border: none;
+}
+
+/* NAV ELEMENTS */
+
+.listaUsos img{
+    width: 25px;
+}
+
+li{
+    list-style: none;
+}
+
+/* PERFILES AMIGOS */
+.perfiles{
+    margin-bottom: 35px;
+    margin-top: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.txtimg{
+    background-color: transparent;
+    border:none;
+    
+}
+
+.imgdreamer{
+    height: 35px;
+    border-radius: 140%;
+}
+
+.flecha{
+    width: 15px;
+    margin-top: 12px;
+}
+
+/* GALERÍA PERFIL */
+
+.imagenes{
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom:20px;
+    display:grid;
+    grid-template-columns:repeat( 3, 1fr);
+    gap:5px;
+}
+.galeria{
+    width: 100%;
+    height: 100%;
+}
+
+/* FOOTER */
+
+footer{
+    background: url(wallpaper/cosmos.png);
+    height: 130px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
