@@ -39,8 +39,8 @@ a{
 
 #header{
 	background: black;
-	filter:alpha(opacity=73);
-	-moz-opacity:.73;opacity:.73;
+	/*filter:alpha(opacity=73);
+	-moz-opacity:.73;opacity:.73;*/
 	padding-top: 25px;
 }
 
@@ -79,8 +79,8 @@ INTENTO DE TRANSPARENCIA
 
 .contenidoRegistro{
 	background-color: #9896a7;
-	filter:alpha(opacity=41);
-	-moz-opacity:.41;opacity:.41;
+	/*filter:alpha(opacity=41);
+	-moz-opacity:.41;opacity:.41;*/
 	padding-bottom: 50px;
 }
 
