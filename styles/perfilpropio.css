@@ -78,14 +78,14 @@ header{
 
 #parteCentral{
     display: flex;
-    width: 50%;
-    margin-left: 7%;
+    width: 80%;
+    margin-left: 10%;
     /* margin: 0 auto; */
-    gap: 15px;
-    justify-content: center;
+    gap: 5vw;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 55px;
     margin-bottom: 30px;
+    justify-content: flex-start;
 }
 
 .userBox{
@@ -94,7 +94,10 @@ header{
 
 
 h3{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ruda', sans-serif;
+    font-size: 1.75em;
+    margin: 0px 2vw;
+    text-align: center;
 }
 
 h4{
@@ -128,9 +131,15 @@ h4{
 
 .inputs_sec button{
     height: 25px;
-    width: 170px;
+    width: 150px;
     background-color: #f0e9ff;
     border: none;
+    padding: 1.5vw;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 2vw;
 }
 
 /* NAV ELEMENTS */
