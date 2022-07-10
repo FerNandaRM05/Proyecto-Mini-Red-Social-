@@ -169,3 +169,87 @@ footer{
     bottom: 0;
     width: 100%;
 }
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+@media screen and (min-width: 495px){
+
+.logo img{
+    width: 60px;
+}
+
+/* MAIN CONTENT */
+
+.inputs_sec {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inputs_sec input{
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.user_photo img{
+    width: 200px;
+    height: 200px;
+}
+
+.user_txt{
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.inputs_sec button{
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+#bio{
+    height: 230px;
+}
+
+.editBio_btn{
+    margin-bottom: 30px;
+}
+
+.bio_txt{
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 31px;
+}
+
+/* BIO */
+
+
+.editBio_btn img{
+    width: 34px;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media screen and (min-width: 721px){
+
+.logo img{
+    width: 60px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media screen and (min-width: 1000px){
+
+.logo img{
+    width: 100px;
+}
+
+.listaUsos img{
+    width: 30px;
+}
