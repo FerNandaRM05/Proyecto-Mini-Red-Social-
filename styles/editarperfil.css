@@ -1,3 +1,4 @@
+<<<<<<< HEAD:editarperfil.css
 *{
     box-sizing: border-box;
     overflow-wrap: break-word; 
@@ -168,4 +169,260 @@ footer{
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+
+@media screen and (min-width: 495px){
+
+.logo img{
+    width: 60px;
+}
+
+/* MAIN CONTENT */
+
+.inputs_sec {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inputs_sec input{
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.user_photo img{
+    width: 200px;
+    height: 200px;
+}
+
+.user_txt{
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.inputs_sec button{
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+#bio{
+    height: 230px;
+}
+
+.editBio_btn{
+    margin-bottom: 30px;
+}
+
+.bio_txt{
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 31px;
+}
+
+/* BIO */
+
+
+.editBio_btn img{
+    width: 34px;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media screen and (min-width: 721px){
+
+.logo img{
+    width: 60px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media screen and (min-width: 1000px){
+
+.logo img{
+    width: 100px;
+}
+
+.listaUsos img{
+    width: 30px;
+=======
+*{
+    box-sizing: border-box;
+    overflow-wrap: break-word; 
+
+}
+
+a{
+    text-decoration: none;
+}
+
+/* TIPOGRAFÍAS */
+
+/* RUDA BLACK font-family: 'Ruda', sans-serif; */ 
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@900&display=swap');
+
+/* alternativa a 29LT BUKRA - MONTSERRAT   font-family: 'Montserrat', sans-serif; */ 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+/* alternativa a Gidole  font-family: 'Abel', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+
+/* ICONOS Atribución:  
+<a href="https://www.flaticon.es/iconos-gratis/identificacion" title="identificación iconos">Identificación iconos creados por Icongeek26 - Flaticon</a>;
+*/
+
+html{
+	width: 100%;
+    height: 100%;
+}
+
+body{
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    gap: 60px;
+    height: 80px;
+}
+
+#menuHorizontal{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#menuHorizontal ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 10px;
+}
+
+.logo img{
+    width: 50px;
+}
+
+
+/* MAIN CONTENT */
+
+#container{
+    margin-top: 60px;
+    height: cont(100vh - 80px- 130px);
+}
+
+#parteCentral{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.userBox{
+    width: 70%;
+}
+
+/*
+.userOptions{
+    width: 30%;
+    margin-right: 80px;
+}*/
+
+.user_photo img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.inputs_sec{
+    line-height: 40px;
+}
+
+.inputs_sec input, .inputs_sec button{
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Ruda', sans-serif;
+    font-weight: bold;
+}
+
+.inputs_sec input{
+    height: 30px;
+    width: 170px;
+    border: solid 3px;
+    border-color: #f0e9ff;
+    font-weight: 700;
+}
+
+.inputs_sec button{
+    height: 25px;
+    width: 170px;
+    background-color: #f0e9ff;
+    border: none;
+}
+
+/* NAV ELEMENTS */
+
+.listaUsos img{
+    width: 25px;
+}
+
+li{
+    list-style: none;
+}
+
+
+/* BIO */
+
+#bio{
+    margin: 0 auto;
+    width: 80%;
+    height: 150px;
+    padding: 30px;
+    border: solid 1px;
+}
+
+.editBio_btn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.editBio_btn img{
+    width: 25px;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.bio_txt p{
+    font-family: 'Montserrat', sans-serif; 
+}
+
+/* FOOTER */
+
+footer{
+    background: url(wallpaper/cosmos.png);
+    height: 130px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+>>>>>>> origin/main:styles/editarperfil.css
 }
