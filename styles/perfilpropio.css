@@ -103,8 +103,8 @@ h4{
 
 .user_photo img{
     width: 15vw;
-    height: auto;
-    border-radius: 100%;
+    height: 15vw;
+    border-radius: 50%;
 }
 
 .inputs_sec{
@@ -137,6 +137,11 @@ h4{
     align-items: center;
     cursor: pointer;
     margin: 1vw 2vw;
+}
+
+.inputs_sec-friend{
+    margin: 0.5vw 0;
+    font-size: 1.25em;
 }
 
 /* NAV ELEMENTS */
@@ -177,6 +182,22 @@ li{
     display: flex;
 }
 
+#vermas{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 0.9em;
+    height: 8vw;
+}
+
+#vermas:hover{
+    text-decoration: underline;
+    line-height: 2vw
+}
+
+#vermas h4 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
 
 .txtimg{
     font-family: 'Ruda', sans-serif;
@@ -286,5 +307,17 @@ footer{
         height: 40px;
         font-weight: bold;
     }
+
+    .inputs_sec-friend{
+        margin-top: 1vw;
+        font-size: 2.25em;
+        letter-spacing: 0.2em;
+    }
+
+    #vermas{
+        width: 85%;
+        font-size: 1.25em;
+    }
+    
     
 }
