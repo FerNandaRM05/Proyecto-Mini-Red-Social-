@@ -18,7 +18,9 @@ function userValidation($infoUser){
     $register = false;
 
     if ($password !== $passChek){
-        return json_encode(array ( 'message' => "Las contraseñas no coinciden"));
+        
+        $message = json_encode(array ( 'message' => "Las contraseñas no coinciden"));
+        return $message;
         $password = null;
     } 
 
@@ -31,11 +33,13 @@ function userValidation($infoUser){
     if (isset($jsonData)){
         for ($i = 0; $i < count($jsonData); $i++) {
             if (($jsonData[$i]["username"]) == $username) {
-                return json_encode(array ( 'message' => "El nombre de usuario ya existe"));
+                $message = json_encode(array ( 'message' => "El nombre de usuario ya existe"));
+                return $message;
             }
     
             if (($jsonData[$i]["email"]) == $email) {
-                return json_encode(array ( 'message' => "El email ya esta registrado."));
+                $message = json_encode(array ( 'message' => "El email ya esta registrado."));
+                return $message;
             }
         }
     }
@@ -50,7 +54,8 @@ function userValidation($infoUser){
             'password' => $password
         ];
     } else {
-        return json_encode(array ( 'message' =>"No se ha podido completar el registro"));
+        $message = json_encode(array ( 'message' =>"No se ha podido completar el registro"));
+        return $message;
     }
     
     if(!isset($passError) && !isset($userError) && !isset($mailError)){
