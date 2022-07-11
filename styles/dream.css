@@ -6,7 +6,7 @@
 html{
 	width: 100%;
 	height: 100%;
-	background: url(wallpaper/cosmos.png);
+	background: url(../img/cosmos.png);
 
 }
 
@@ -44,26 +44,6 @@ a{
 	padding-top: 25px;
 }
 
-/*
-INTENTO DE TRANSPARENCIA
-
-#header {
-  position: relative;
-}
-#header > * {
-  position: relative;
-  z-index: 1;
-}
-#header:before {
-  position: absolute;
-  content: '';
-  background-color: black;
-  filter:alpha(opacity=73);
-  -moz-opacity:.73;opacity:.73;
-  padding-top: 25px;
-}
-*/
-
 #container{
 	width: 100%;
 	height: 100%;
@@ -80,27 +60,10 @@ INTENTO DE TRANSPARENCIA
 
 
 .contenidoRegistro{
-	
-	background-color: rgba(128, 128, 128, 0.40);
-	padding-bottom: 50px;
+	background-color: rgba(128, 128, 128, 0.8);
+    padding-bottom: 50px;
+    border-radius: 2%;
 }
-
-/*
-INTENTO DE TRANSPARENCIA
-.contenidoRegistro {
-  position: relative;
-}
-.contenidoRegistro > * {
-  position: relative;
-  z-index: 1;
-}
-.contenidoRegistro:before {
-  position: absolute;
-  content: '';
-  background-color: #9896a7;
-  padding-bottom: 50px;
-}
-*/
 
 h1, h2{
 	color: white;
@@ -169,8 +132,6 @@ h1, h2{
 
 	.formFile {
 		margin-left:35px;
-		
-		
 	}
 
    .socialClaim{
@@ -184,7 +145,7 @@ h1, h2{
 		display: flex;
 		width: 80%;
 		align-items: center;
-		margin: 30px auto;}
+		margin: 50px auto;}
 
 	#contenido, #header, #espacioTexto{
 		width: 90%;

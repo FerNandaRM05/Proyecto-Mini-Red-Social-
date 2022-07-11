@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../styles/dream.css">
+	<link rel="icon" type="image/x-icon" href="../img/logosimple.jpg">
+	<title>Registro</title>
+</head>
+<body>
+
+	<div id="container">
+
+		<div class="socialClaim">
+			<h2>Somos la red social que inspira a ser auténtic@s.<br>No esperes
+				más y lanzate a vivir una experiencia única.
+			</h2>
+		</div>
+
+		<main id="contenido">
+			<div id="header"> 
+				<a href="feed.html"><img src="../img/logo.jpg" alt="logotipo dreAm"></a>
+			</div>
+
+			<div id="espacioTexto">
+				<!-- INPUTS -->
+				<div class="inputs_sec">
+
+					<input type="text" placeholder="nombre" id="name">
+					<input type="text" placeholder="apellidos" id="lastName">
+					<input type="email" placeholder="nombre de usuari@" id="userName">
+					<input type="email" placeholder="email" id="email">
+					<div class="photoBox">
+						<img src="../img/identificacion.png" alt="icono identificación">
+						<input type="file" placeholder="sube una foto" id="costumFile">
+						<label for="costumFile" class="formFile">sube una foto</label>
+					</div>
+					<input type="password" placeholder="contraseña" id="password">
+					<button onclick="register(event)" >Registrarme</button>
+
+				</div>
+				
+				
+			</div>
+		</main>
+
+	</div>
+	<script src="../JS/register.js"></script>
+</body>
+</html>
