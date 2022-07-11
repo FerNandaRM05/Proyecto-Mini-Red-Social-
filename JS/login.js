@@ -11,7 +11,7 @@ async function login(e){
 
     if(user == false){
         var errorSpan = document.getElementById("formError");
-        errorSpan.innerHTML = "Error en contraseña o nombre de usuario. Por favor revisa y prueba nuevamente" 
+        errorSpan.innerHTML = "Error en contraseña o nombre de usuario. Por favor revisa y prueba nuevamente." 
     }
     
 }
