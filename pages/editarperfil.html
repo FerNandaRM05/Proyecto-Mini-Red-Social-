@@ -8,77 +8,54 @@
 	<title>Editar perfil</title>
 </head>
 <body>
-
 	<div id="container">
-
 		<header>
-		
 			<div class="logo">
-				<a href="feed.html"><img src="../img/logosimple.jpg" alt="logo de dreAm"></a>
+				<a href="feed.html"><img src="../img/logosimple.jpg" alt="logo de dreAm" id="logoRedSocial"></a>
 			</div>
-
 			<nav id="menuHorizontal">
 				<ul>
 					<li class="listaUsos">
-						<a href="perfilpropio.html"><img src="../img/person.jpg" alt="icono del perfil"></a>
+						<a href="perfilpropio.html"><img src="../img/person.jpg" alt="Perfil"></a>
 					</li>
 					<li class="listaUsos">
-						<img src="../img/power.png" alt="icono cerrar sesión">
+						<a href="../php/logout.php"><img src="../img/power.png" alt="Cerrar sesión"></a>
 					</li>
 				</ul>
 			</nav>
-
 		</header>
-
 		<div id="parteCentral">
-			
 			<div class="userBox">
-				
 				<div class="user_photo">
 					<img src="../img/perfildetalle.jpg" alt="foto de perfil">
 				</div>
-
 				<div class="user_txt">
-					<h3>lukas</h3>
+					<h3>Lukas Mallora</h3>
 				</div>
-
 			</div>
-
 			<div class="userOptions">
-
 				<div class="inputs_sec"> <!-- INPUTS -->
-					<input type="text" placeholder="nombre">
-					<input type="text" placeholder="apellidos">
-					<input type="email" placeholder="email">
+					<input type="text" placeholder="Nombre" class="retoque">
+					<input type="text" placeholder="Apellidos" class="retoque">
+					<input type="email" placeholder="Email" class="retoque">
 					<div class="actualizaimg">
-						<input type="file" placeholder="actualiza tu foto" id="costumFile">
-						<label for="costumFile" class="formFile">actualiza tu foto</label>
+						<input type="file" placeholder="Actualiza tu foto" id="costumFile" class="retoque">
+						<label for="costumFile" class="formFile">Actualiza tu foto</label>
 					</div>
-					<input type="text" placeholder="nueva contraseña">
-					<button>enviar</button>
+					<input type="text" placeholder="Nueva contraseña" class="retoque">
+					<button type="submit" id="modificar" style="border-radius: 10px; background-color: black; color: white; width: 100%; height: 50px;">Modificar</button>
 				</div>
-		
 			</div>
-
 		</div>
-
 		<div id="bio">
-			
 			<div class="editBio_btn">
 				<img src="../img/editpencil.svg" alt="botón para editar biografía">
 			</div>
-
 			<div class="bio_txt">
 				<p>Hola, Mundo. Soy Lukas, 3D Designer. ¿Cuándo unas cañas?</p>
 			</div>
-
 		</div>
-
-		<footer>
-			
-		</footer>
-
 	</div>
-
+	<script src="js/uiLogic.js"></script>
 </body>
 </html>
