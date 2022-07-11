@@ -10,41 +10,34 @@
 <body>
 
 	<div id="container">
-
 		<div class="socialClaim">
-			<h2>Somos la red social que inspira a ser auténtic@s.<br>No esperes
+			<h2 class="claim">Somos la red social que inspira a ser auténtic@s.<br><br>No esperes
 				más y lanzate a vivir una experiencia única.
 			</h2>
 		</div>
-
-		<main id="contenido">
-			<div id="header"> 
+		<main id="contenido" class="formulario">
+			<div id="header" class="header_radius"> 
 				<a href="feed.html"><img src="../img/logoblanco.png" alt="logotipo dreAm"></a>
 			</div>
-
 			<div id="espacioTexto">
 				<!-- INPUTS -->
 				<div class="inputs_sec">
-					<input type="text" placeholder="nombre" id="name">
-					<input type="text" placeholder="apellidos" id="lastName">
-					<input type="email" placeholder="nombre de usuari@" id="username">
-					<input type="email" placeholder="email" id="email">
-					<input type="date" id="birthday">
+					<input type="text" placeholder="Nombre" id="name" class="retoque" required>
+					<input type="text" placeholder="Apellidos" id="lastName" class="retoque" required>
+					<input type="email" placeholder="Nombre de Usuario" id="username" class="retoque" required>
+					<input type="email" placeholder="Email" id="email" class="retoque" required>
+					<input type="date" id="birthday" class="retoque" placeholder="Fecha de Nacimiento" required>
 					<div class="photoBox">
 						<img src="../img/identificacion.png" alt="icono identificación">
-						<input type="file" placeholder="sube una foto" id="costumFile">
-						<label for="costumFile" class="formFile">sube una foto</label>
+						<input type="file" placeholder="Sube tu foto de perfil" id="costumFile">
+						<label for="costumFile" class="formFile">Sube tu foto de perfil</label>
 					</div>
-					<input type="password" placeholder="contraseña" id="password">
-					<input type="password" placeholder="repite contraseña" id="passCheck">
-					<button onclick="register(event)" >Registrarme</button>
-
+					<input type="password" placeholder="Contraseña" id="password" class="retoque">
+					<input type="password" placeholder="Repite la Contraseña" id="passCheck" class="retoque">
+					<button onclick="register(event)" class="retoque" style="height: 50px; background: black; color: white;">Registrarme</button>
 				</div>
-				
-				
 			</div>
 		</main>
-
 	</div>
 	<script src="../JS/register.js"></script>
 </body>
