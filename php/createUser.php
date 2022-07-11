@@ -1,14 +1,15 @@
 <?php
 session_start();
-$body = file_get_contents('php://input');
+$body = file_get_contents('php://input');// para conectarlo con la API
 $data = json_decode($body, true);
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     echo userValidation($data);
+    
 }
 
 function userValidation($infoUser){
     $name = $infoUser['name'];
-    $lastname = $infoUser['lastName'];
+    $lastname = $infoUser['lastname'];
     $username = $infoUser['username'];
     $email = $infoUser['email'];
     $fechaNac = $infoUser['birthday'];

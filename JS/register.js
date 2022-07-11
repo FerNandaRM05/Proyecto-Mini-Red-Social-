@@ -16,13 +16,17 @@ const register = async (e) => {
         password,
         passwordCheck
     }
-    
-    const getApi = await fetch('../php/createUser.php',{
-        method : 'POST',
+    console.log(data)
+    const getApi = await fetch('../php/createUser.php', {
+        method:'POST',
         body: JSON.stringify(data)
     })
     const resApi = await getApi.json()
+    // const getApi = await fetch('../php/createUser.php',{
+    //     method : 'POST',
+    //     body: JSON.stringify(data)
+    // })
+    // const resApi = await getApi.json()
     console.log(resApi);
     
-}
-    //console.log(name, lastName, userName, email, password);
+ }

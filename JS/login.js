@@ -9,9 +9,9 @@ async function login(e){
     
     const user = userexists(data, email, contraseña);
 
-    if(user == false){
+    if(!user){
         var errorSpan = document.getElementById("formError");
-        errorSpan.innerHTML = "Error en contraseña o nombre de usuario. Por favor revisa y prueba nuevamente." 
+        return errorSpan.innerHTML = "Error en contraseña o nombre de usuario. Por favor revisa y prueba nuevamente." 
     }
     
 }
