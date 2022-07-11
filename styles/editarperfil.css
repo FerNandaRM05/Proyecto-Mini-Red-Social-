@@ -231,10 +231,36 @@ footer{
         margin: 1vw 2vw;
     }
 
+    .inputs_sec input{
+        height: 44px;
+        width: 273px;
+    }
+
+    .inputs_sec input, .actualizaimg, .bio_txt, .user_txt{
+        height: 44px;
+        width: 273px;
+    }
+
+    .inputs_sec{
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+
     .logo img{ 
         width: 100px;
     }
 
+    .user_photo img{
+        height: 30vh;
+        width: 30vh;
+        border-radius: 50%;
+    }
+
+    .userBox {
+        width: 34%;
+    }
+  
   /* NAV ELEMENTS */
     .listaUsos img{
         width: 40px;
