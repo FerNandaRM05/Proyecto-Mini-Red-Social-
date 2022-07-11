@@ -1,3 +1,4 @@
+
 const register = async (e) => {
     e.preventDefault()
     let name = document.getElementById("name").value 
@@ -16,17 +17,18 @@ const register = async (e) => {
         password,
         passwordCheck
     }
-    console.log(data)
+    
     const getApi = await fetch('../php/createUser.php', {
         method:'POST',
         body: JSON.stringify(data)
     })
-    const resApi = await getApi.json()
-    // const getApi = await fetch('../php/createUser.php',{
-    //     method : 'POST',
-    //     body: JSON.stringify(data)
-    // })
-    // const resApi = await getApi.json()
-    console.log(resApi);
+    const { message, status } = await getApi.json() //destructuración de objetos { message, status }
+    
+    if (!status) {
+        console.log(message)
+    }
     
  }
+
+
+

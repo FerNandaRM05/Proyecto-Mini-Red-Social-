@@ -5,9 +5,9 @@ async function login(e){
     var contraseña = document.getElementById("password").value;
     const jsondata = await fetch("http://localhost/scripts-php/Proyecto-Mini-Red-Social-/json/data.json")
     const data = await jsondata.json()
-
     
     const user = userexists(data, email, contraseña);
+    // console.log(`Hola ${user.nombre} fer rompio el codigo`);
 
     if(!user){
         var errorSpan = document.getElementById("formError");
@@ -15,6 +15,7 @@ async function login(e){
     }
     
 }
+
 
 function userexists(data, email, contraseña){
     for (let i = 0; i < data.length; i++){
