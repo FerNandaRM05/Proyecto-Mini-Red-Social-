@@ -39,6 +39,12 @@ a{
 */
 
 /* CONTENIDO PRINCIPAL */
+.error{
+	font-family: 'Ruda', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	color: red;
+}
 
 #header{
 	background: black;
