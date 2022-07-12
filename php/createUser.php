@@ -43,10 +43,13 @@ function userValidation($infoUser){
         $miArray = (Object) [
             'id' => session_id(),
             'nombre' => $name,
+            'lastName' => $lastname,
             'username' => $username,
             'email' => $email,
             'fechaNac' => $fechaNac,
-            'password' => $password
+            'password' => $password,
+            'description' => '',
+            'status' => true
         ];
     } else {
         return json_encode(array ( 'message' =>"No se ha podido completar el registro"));

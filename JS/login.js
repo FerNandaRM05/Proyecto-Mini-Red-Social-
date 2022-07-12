@@ -3,24 +3,30 @@ async function login(e){
 
     var email = document.getElementById("email").value;
     var contraseña = document.getElementById("password").value;
-    const jsondata = await fetch("http://localhost/scripts-php/Proyecto-Mini-Red-Social-/json/data.json")
+    const jsondata = await fetch("../Proyecto-Mini-Red-Social-/json/data.json")
     const data = await jsondata.json()
 
     
-    const user = userexists(data, email, contraseña);
+    const { id, status } = userexists(data, email, contraseña);
+    console.log(id);
 
-    if(user == false){
-        var errorSpan = document.getElementById("formError");
-        errorSpan.innerHTML = "Error en contraseña o nombre de usuario. Por favor revisa y prueba nuevamente." 
+    if(status)
+    {
+        var direccion = "../Proyecto-Mini-Red-Social-/pages/perfilpropio.php?id=" + id;
+       window.location.href = direccion;
     }
+    
+    
+        var errorSpan = document.getElementById("formError");
+        errorSpan.innerHTML = "<p class='error'>Error en contraseña o nombre de usuario. Por favor revisa y prueba nuevamente.</p>"; 
+
     
 }
 
 function userexists(data, email, contraseña){
     for (let i = 0; i < data.length; i++){
         if (data[i].email == email && data[i].password == contraseña){
-            return true  
-                     
+            return data[i];
         }    
     }
     return false
