@@ -9,7 +9,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Ruda:wght@900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <title>Feed</title>
-
+    <script src="../JS/allUsers.js"></script>
+    <script>
+      var otra = async function() //tiene que ser una función asíncrona 
+      {
+        var usuarios = await all(); //se espera a que se ejecute la api porque está dentro de una función asíncrona
+        
+        var todosUsuarios = usuarios[0]; 
+        var usuarioActivo = usuarios[1]; //este es el array con los datos del usuario activo
+        
+        var padre = document.getElementById('amigos');
+        var hijo = document.createElement('div'); 
+        hijo.classList.add('imagenes');
+        for(let i=0; i<todosUsuarios.length; i++)
+        {
+          hijo.innerHTML += `<div class='usuario'><img src='../imgUsers/${todosUsuarios[i]['id']}/profile/profile.png' class='imgusuario'>
+          <button class='txtimg'>${todosUsuarios[i]['nombre']}</button></div>`;
+          padre.appendChild(hijo);
+        }
+      }
+      otra();
+      
+    </script>
 </head>
 <body>
   
@@ -33,36 +54,12 @@
     
 
 
-      <main>
+      <main id="amigos">
 
         <h1>Encuentra a más dreAmers</h1>
         
         <!---->
         <div class="imagenes">
-          <div class="usuario">
-              <img src="../img/galeria (1).jpg" class="imgusuario">
-              <button class="txtimg">CarlosK</button>
-          </div>
-          <div class="usuario" >
-              <img src="../img/galeria (1).jpg" class="imgusuario">
-              <button class="txtimg">MariaS</button>
-          </div>
-          <div class="usuario">
-              <img src="../img/galeria (1).jpg" class="imgusuario">
-              <button class="txtimg">LorenaR</button>
-          </div>
-          <div class="usuario">
-              <img src="../img/galeria (1).jpg" class="imgusuario">
-              <button class="txtimg">Carlosk</button>
-          </div>
-          <div class="usuario">
-              <img src="../img/galeria (1).jpg" class="imgusuario">
-              <button class="txtimg">MariaS</button>
-          </div>
-          <div class="usuario">
-              <img src="../img/gallery (1).jpg" class="imgusuario">
-              <button class="txtimg">LorenaR</button>
-          </div>
           <div class="usuario">
               <img src="../img/galeria (1).jpg" class="imgusuario">
               <button class="txtimg">CarlosK</button>
@@ -75,31 +72,7 @@
               <img src="../img/gallery (4).jpg" class="imgusuario">
               <button class="txtimg">LorenaR</button>
           </div>
-          <div class="usuario">
-              <img src="../img/gallery (3).jpg" class="imgusuario">
-              <button class="txtimg">Carlosk</button>
-          </div>
-          <div class="usuario">
-              <img src="../img/gallery (2).jpg" class="imgusuario">
-              <button class="txtimg">MariaS</button>
-          </div>
-          <div class="usuario">
-              <img src="../img/gallery (1).jpg" class="imgusuario">
-              <button class="txtimg">LorenaR</button>
-          </div>
-
-          <div class="usuario">
-              <img src="../img/gallery (3).jpg" class="imgusuario">
-              <button class="txtimg">Carlosk</button>
-          </div>
-          <div class="usuario">
-              <img src="../img/gallery (2).jpg" class="imgusuario">
-              <button class="txtimg">MariaS</button>
-          </div>
-          <div class="usuario">
-              <img src="../img/gallery (1).jpg" class="imgusuario">
-              <button class="txtimg">LorenaR</button>
-          </div>
+          
         
         </div>
 
@@ -109,7 +82,6 @@
          
       </footer>
   </div>
-
-
+  
 </body>
 </html>
