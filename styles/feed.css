@@ -104,6 +104,11 @@ li{
     height: 100%;
 }
 
+.imgusuario:hover{
+    transition: 1s ;
+    transform: scale(1.1);
+}
+
 .txtimg{
     background-color: transparent;
     border:none;
