@@ -11,7 +11,8 @@ async function login(e){
 
     if (email == "" || contraseña  == ""){      
         var errorSpan = document.getElementById("formError");
-        errorSpan.innerHTML = "<p class='error'>❌​ Debe rellenar el email y contraseña</p>";
+        errorSpan.innerHTML = "<p>❌​ Debe rellenar el email y contraseña</p>";
+        errorSpan.classList.add("error");
     }else if(user){
         var direccion = "../Proyecto-Mini-Red-Social-/pages/perfilpropio.php?email=" + email;
         window.location.href = direccion;
