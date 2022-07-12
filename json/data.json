@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 [{"id":"29un7l7snkqpu5t505n5ok770b","nombre":"Adrian","username":"g","email":"mariferrm97@hotmail.com","fechaNac":"","password":"1234"},{"id":"7fmvnjq9h9rsbdnk9bqndatt9b","nombre":"Andrea","username":"g","email":"adrian.afo@hotmail.com","fechaNac":"","password":"123", "status":true},{"id":"g3uo15mqi9mukd507bqjm0rfni","nombre":"juan ","lastName":null,"username":"casta0398","email":"juancastano0398@gmail.com","fechaNac":"2022-07-01","password":"Daniel0119","description":"","status":true}]
+=======
+[{"id":"29un7l7snkqpu5t505n5ok770b","nombre":"Adrian","username":"g","email":"mariferrm97@hotmail.com","fechaNac":"","password":"1234"},{"id":"7fmvnjq9h9rsbdnk9bqndatt9b","nombre":"Andrea","username":"g","email":"adrian.afo@hotmail.com","fechaNac":"","password":"123", "status":true},{"id":"g3uo15mqi9mukd507bqjm0rfni","nombre":"juan ","lastName":null,"username":"casta0398","email":"juancastano0398@gmail.com","fechaNac":"2022-07-01","password":"Daniel0119","description":"","status":true}]
+>>>>>>> 74e5e0b21374cb9f37582e1d347c3e5a7cfa05ca

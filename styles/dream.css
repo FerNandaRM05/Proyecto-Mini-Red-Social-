@@ -39,6 +39,12 @@ a{
 */
 
 /* CONTENIDO PRINCIPAL */
+.error{
+	font-family: 'Ruda', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	color: red;
+}
 
 #header{
 	background: black;
@@ -89,7 +95,6 @@ h1, h2{
 
 h1 {
 	--text: #ffffff;
-	--yellow: #fde01a;
 	--blue: #24408e;
 	--purple: #732982;
 	color: var(--text);
@@ -98,6 +103,20 @@ h1 {
     font-weight: 500;
     margin-top: 22px;
 	text-shadow: -4px -3px 2px var(--blue), -4px -2px 2px var(--purple);
+}
+
+
+.socialClaim h2 {
+	--text: #ffffff;
+    --black: #000000;
+    --blue: #24408e;
+    --purple: #732982;
+    color: var(--text);
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 5px;
+    font-weight: 400;
+    margin-top: 22px;
+    text-shadow: 17px 41px 17px var(--black), 5px 2px 3px var(--purple), 17px -9px 31px var(--blue);
 }
 
 /* SECCIÓN INPUTS */
@@ -163,7 +182,7 @@ h1 {
 @media screen and (min-width: 1000px){
 
 	.formFile {
-		margin-left:35px;
+		margin-left:90px;
 	}
 
    .socialClaim{
@@ -171,6 +190,7 @@ h1 {
 	margin-left: 30px;
     width: 70%;
 	text-align: left;
+
     }
  
 	#container{
