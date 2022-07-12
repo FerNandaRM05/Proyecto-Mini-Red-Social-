@@ -9,23 +9,20 @@ async function login(e){
     const user = userexists(data, email, contraseña);
     // console.log(`Hola ${user.nombre} fer rompio el codigo`);
 
+    const { id, status } = userexists(data, email, contraseña);
+    console.log(id);
+
     if (email == "" || contraseña  == ""){      
         var errorSpan = document.getElementById("formError");
         errorSpan.innerHTML = "<p>❌​ Debe rellenar el email y contraseña</p>";
         errorSpan.classList.add("error");
-    }else if(user){
-        var direccion = "../Proyecto-Mini-Red-Social-/pages/perfilpropio.php?email=" + email;
+    }else if(status){
+        var direccion = "../Proyecto-Mini-Red-Social-/pages/perfilpropio.php?id=" + id;
         window.location.href = direccion;
     }else{
         var errorSpan = document.getElementById("formError");
         errorSpan.innerHTML = "<p class='error'>❌ Error en contraseña o nombre de usuario. Por favor revisa y prueba nuevamente.</p>";
     }
-    
-    
-        var errorSpan = document.getElementById("formError");
-        errorSpan.innerHTML = "<p class='error'>Error en contraseña o nombre de usuario. Por favor revisa y prueba nuevamente.</p>"; 
-
-    
 }
 
 
